@@ -44,7 +44,6 @@ body{
 }
 
 .signin_holder{
-    padding: 10px;
     margin-top: 90px;
 }
 
@@ -105,9 +104,6 @@ button a{
     margin-top: 50px;
 }
 
-.admin{
-    width: auto;
-}
 
 .signup a{
     color: rgb(24, 24, 197);
@@ -117,3 +113,7 @@ button a{
     color: rgb(24, 24, 197);
   
 }
+
+
+
+
