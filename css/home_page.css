@@ -29,9 +29,10 @@ body{
 
 .home_flex:nth-child(2){
     width: 40%;
-    display: grid;
-    place-items: center;
+    display: flex;
+    justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 
@@ -41,14 +42,13 @@ body{
 
 .create_account_holder{
     text-align: center;
-    width: 60%;
-    padding-top:250px ;
+    width: 60%
 }
 
 
 h1{
     font-weight: 300;
-    font-size: 2.4rem;
+    font-size: 2rem;
     color: rgb(24, 24, 197);
     margin-bottom: 0;
 }
@@ -81,8 +81,10 @@ p{
 }
 
 
-
 .enquiries{
-    padding-top: 100px;
+    position: absolute;
+    top: 90%;
+    right:5%;
+    transform: translate(-90%,-5%);
 }
 
