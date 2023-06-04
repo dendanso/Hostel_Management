@@ -1,5 +1,8 @@
+//Angular Js Setup Starts Here
+
 const app  = angular.module('App',['ngRoute','ngAnimate'])
 
+//Angular Js Rousting Config Starts Here
 app.config(function($routeProvider){
     $routeProvider
     .when(
@@ -28,7 +31,7 @@ app.config(function($routeProvider){
     )
     
 })
-
+//Angular Js Rousting Config Ends Here
 
 
 
@@ -103,3 +106,15 @@ function imageCarousel(){
 }
 
 setInterval(imageCarousel,carouselTime)
+
+
+//Image Carousel Functions Ends Here
+
+//Gallery Functions Starts here
+
+const galleryArray = [
+    "https://images.unsplash.com/photo-1578898887155-72e9a7da1fb3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
+    "https://images.unsplash.com/photo-1577791465291-35b823edfeba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
+    "https://images.unsplash.com/photo-1578898887193-90f85d96cd7c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+
+]
