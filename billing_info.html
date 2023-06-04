@@ -1,49 +1,68 @@
 
 <form action="">
+    <h3>Billing Information</h3>
+    <div class="basic_info_main_2">
+        <div class="basic_info_flex">
+            <div class="billing_flexbox">
+                <div class="billing_flex">
+                    <p>First Name</p>
+                <input type="text" name="" id="">
+    
+                <p>Email Address</p>
+                <input type="email" required>
+    
+                <p>Address</p>
+                <input type="text" required>
+                <p><input type="checkbox"><span class="replicate_basic_info">Same as Basic Information</span></p>
+                
+                </div>
 
-    <p>Billing Information</p>
-    <div class="name_details">
-        <div class="first_name">
-            <p>First Name</p>
-            <input type="text" autofocus>
+                <div class="billing_flex">
+                    <p>Last Name</p>
+                <input type="text" name="" id="">
+    
+                <p>Country</p>
+                <input type="email" required>
+    
+                <p>Phone Number</p>
+                <input type="text" required>
+                </div>
+                
+            </div>
+           
+            <p></p>
+            <button ng-click="booking_info()">Back</button>
         </div>
-     <div class="last_name">
+        <div class="basic_info_flex">
+            <p><input type="radio"> <b>Make Payment</b></p>
+            <div class="payment_flexbox">
+                <input type="radio">
+                <div class="payment_flex">
+                    
+                    <img src="./images/mtn_momo.png" alt="payment icon">
+                </div>
+                <input type="radio">
+                <div class="payment_flex">
+                  
+                    <img src="./images/vodafone.png" alt="payment icon">
+                </div>
+                <input type="radio">
+                <div class="payment_flex">
+                   
+                    <img src="./images/airtel.png" alt="payment icon">
+                </div>
 
-        <p>Last Name</p>
+                <div class="payment_flex">
 
-        <input type="text" >
-     </div>   
-    </div>
-
-
-    <div class="other_details">
-        <div class="email_1">
-            <p>Gender</p>
-            <button>Male</button>
-            <button>Female</button>
-        </div>    
-        <div class="country">
-            <p>Country</p>
-            <input type="text" >
-        </div>   
+                    <input type="radio"> <b>Bank Transfer</b>
+                    
+                </div>
+            </div>
+            <p><input type="radio"> <b>Make Payment Later</b></p>
+            <p style="color:red">Note: Payment Confirms your Booking. Room will not be reserved for until payment have been made. </p>
+            <p></p>
+            <button>Next</button>
         </div>
-        
-        <div class="number">
-            <p>Course of Study</p> 
-            <input type="number">
-        </div> 
-    </div> 
-
-
-
-<div class="button_holder">
-    <div class="button_holder_flex">
-        <button>Undergraduate</button>
-        <button>Post Graduate</button>
     </div>
-    <div class="button_holder_flex">
-        <button>Next</button>
-    </div>
-</div>
-
+    
 </form>

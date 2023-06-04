@@ -767,14 +767,7 @@ form h3{
     justify-content:space-between ;
 }
 
-.initials{
-    width:40%;
-    padding-left: 0;
-}
 
-.initials input{
-    outline: none;
-}
 
 .description{
     margin-top:30px;
@@ -852,6 +845,35 @@ b{
 .gallery img{
     width: 30%;
     
+}
+
+.close{
+    color: white;
+    position: absolute;
+    top: 2%;
+    right: 5%;
+    transform: scale(2) translate(-5%,-2%);
+    cursor: pointer;
+    
+}
+
+.arrow_left,.arrow_right{
+    position: absolute;
+    color: white;
+    cursor: pointer;
+
+}
+
+.arrow_left{
+    top: 50%;
+    left: 30%;
+    transform: scale(5) translate(-30%,-50%);
+}
+
+.arrow_right{
+    top: 50%;
+    right: 30%;
+    transform: scale(5) translate(-30%,-50%);
 }
 
 
