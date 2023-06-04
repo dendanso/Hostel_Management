@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,200;400;0,900;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <title>Baseline Hostel | Bookings</title>
 </head>
 <body ng-app="App">
 
-    <div class="main_container" ng-controller="myController">
+    <div class="container_main" ng-controller="myController">
         <section>
             <nav>
                 <div class="navigator">
@@ -18,17 +19,160 @@
                     </div>
     
                     <div class="booking_button">
-                        <button>
+                       <!-- <button>
                             Book a Room
-                        </button>
+                        </button>-->
                     </div>
+                </div>
+                   
                 </div>
             </nav>
     
             <div class="main">
+                <div class="info_container">
+
+                    <div class="information_flexbox">
+                    
+                    
+                        <div class="flex1">
+                            <div class="text">
+                                <h4>BASELINE HOSTEL</h4>
+                            <h2>Book A Room with Us</h2>
+                            </div>
+                            
+                        </div>
+    
+                        <div class="flex2">
+                            <div class="white_background_container">
+                                <div class="white_background_holder">
+                                    <div class="basic_info_holder">
+                                        <div class="basic_info">
+                                            <h2 class="heading">Basic Information</h2>
+                                            <h4>Fill this form with the appropriate credentials.</h4>
+                                        </div>
+
+                                        <div class="basic_info_2">
+                                            <div class="numbers">
+                                              
+                                                <div class="number1"><p>1</p></div>
+                                                <div class="line">
+                                                    <hr>    
+                                                </div>
+                                                <div class="number2"><p>2</p></div>
+                                                <div class="line">
+                                                    <hr>
+                                                </div>
+                                                <div class="number3"><p>3</p></div>
+                                               
+                                                   
+                                            </div>
+
+                                            <div class="numbers_description">
+                                                <p>Basic Information</p>
+                                                <p>Booking Information</p>
+                                                <p>Payment Information</p>
+                                            </div>
+
+                                           
+                                        </div>
+            
+                                       
+                                    </div>
+
+                                    <!--Anguler Js Injected Here-->
+                                    <div ng-view></div>
+                                    <!--Anguler Js Injecting Ends  Here-->
+
+                                    <div class="description_holder">
+                                        <div class="description">
+                                            <h2>Baseline Hostel</h2>
+                                            <h1>Carl Benson Block</h1>
+
+                                            <p>Description</p>
+
+                                            <p>
+                                                Our rooms are spacious and well-lit, with plenty of natural light.
+                                                The interior is designed to provide you with a comfortable and cozy stay.
+
+                                            </p>
+
+                                                <div class="details">
+                                                    <div class="details_1">
+                                                        <div class="image">
+                                                            <img src="./images/guests.png" alt="">
+                                                        </div>
+                                                        <div class="text2">
+                                                            1-3 Guests
+                                                        </div>
+    
+                                                    </div>
+                                                    
+                                                    <div class="details_1">
+                                                        <div class="image">
+                                                            <img src="./images/bed_icon.png" alt="">
+                                                        </div>
+                                                        <div class="text2">
+                                                           60 Bedrooms
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="details_1">
+                                                        <div class="image">
+                                                            <img src="./images/car_park.png" alt="">
+                                                        </div>
+                                                        <div class="text2">
+                                                           Car Park
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                        </div>
+
+                                        <div class="image_container">
+                                            <div class="image_holder">
+                                                <div class="image1">
+
+                                                </div>
+                                                <div class="image2">
+    
+                                                </div>
+
+                                                <div class="image3">
+    
+                                                </div>
+                                            </div>
+                                          
+                                            
+
+
+                                        </div>
+                                        
+                                        <div class="dot"></div>
+                                   
+                                    </div>
+                                    <div class="circles">
+                                        <div class="circle_holder">
+
+                                            <div class="circle_1"></div>
+                                            
+                                            <div class="circle_2"></div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                               
+                            </div>
+                          
+                            <p class="login"><a href="#" >Admin? Log in here</a></p>
+                        </div>
+                    </div>
+                </div>
+                
+                
                 
             </div>
         </section>  
+
+        
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.3/angular.min.js" integrity="sha512-KZmyTq3PLx9EZl0RHShHQuXtrvdJ+m35tuOiwlcZfs/rE7NZv29ygNA8SFCkMXTnYZQK2OX0Gm2qKGfvWEtRXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>

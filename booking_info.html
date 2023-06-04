@@ -1,0 +1,100 @@
+
+<form action="">
+
+    <div class="basic_info_main_2">
+        <div class="basic_info_flex">
+            <p>Select Room</p>
+            <div class="booking_rooms">
+                
+                <div class="booking_info_flex1">
+                    
+                    <div class="booking_room1">
+                        <input type="radio">
+                        <img src="./images/bed_icon.png" alt="Baseline Bed icons">
+                    </div>
+                   
+                </div>
+                <div class="booking_info_flex2">
+
+                    <div class="booking_room1">
+                        <input type="radio">
+                        <img src="./images/two_bed_icon.svg" alt="Baseline bed icons">
+                    </div>
+                   
+                </div>
+                <div class="booking_info_flex3">
+
+                    <div class="booking_room2">
+                        <input type="radio">
+                        <img src="./images/three_bed-icon.png" alt="baseline bed icons">
+                    </div>
+                    
+                </div>
+
+            </div>
+          
+
+            
+
+            <div class="floors">
+                <div class="floor_number">
+                    <p>Select floor</p>
+                    <select>
+                        <option value="0">Floor 1</option>
+                        <option value="1">Floor 2</option>
+                        <option value="2">Floor 3</option>
+                    </select>
+
+
+                </div>
+               
+                <div class="room_numbers">
+                    <p>Select Room Number</p>
+                    
+
+                    <div class="rooms">
+                        <h1>A -</h1>
+                        <select>
+                            <option value="0">01</option>
+                            <option value="1">02</option>
+                            <option value="2">03</option>
+                        </select>
+                    </div>
+                   
+
+                </div>
+            </div>
+
+            <p></p>
+            <button ng-click="basic_info_two()">Back</button>
+        </div>
+
+        <div class="basic_info_flex">
+            <p>Are you booking this room alone?</p>
+            <button class="button_yes">Yes</button>
+            <button class="button_no">No</button>
+            
+            
+            <div class="add_roomate">
+                <div class="add_flex">
+                    <p>Add Roomate</p>
+                    <input type="text" placeholder="Full Name">
+                    <input type="text" placeholder="Email Address">
+                </div>
+                <div class="add_flex">
+                    <div class="content">
+                        <input type="text" placeholder="Full Name">
+                        <input type="text" placeholder="Email Address">
+                    </div>
+                    
+                </div>
+            </div>
+            
+
+            <p></p>
+            <button class="next_button" ng-click="billing_info()">Next</button>
+        </div>
+       
+    </div>
+
+</form>

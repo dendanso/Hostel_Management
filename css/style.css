@@ -1,3 +1,15 @@
+::-webkit-input-placeholder { /* Edge */
+    font-size: .72rem;
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer */
+    font-size: .72rem;
+  }
+  
+  ::placeholder {
+    font-size: .72rem;
+  }
+
 body{
     margin: 0;
     padding: 0;
@@ -11,7 +23,7 @@ body{
 
 }
 
-.flexbox{
+.admin_signin__flexbox{
     display: flex;
 }
 
@@ -55,9 +67,7 @@ h1{
     padding-top:5px;
 }
 
-p{
-    color: rgb(101, 101, 101);
-}
+
 
 .email{
     border: none;
@@ -83,7 +93,7 @@ p{
     font-size: 1rem;
 }
 
-button{
+/*button{
     color: white;
     border: none;
     border: 1px solid;
@@ -92,6 +102,10 @@ button{
     padding: 14px 50px;
     font-size: 1.2rem;
     font-weight: 700;
+}*/
+
+button{
+    cursor: pointer;
 }
 
 button a{
@@ -124,13 +138,17 @@ nav{
     width: 100%;
     display: flex;
     justify-content: space-between;
-    height: 8vh;
+    height: 6vh;
 }
 .logo_main{
-width: 50%;
+width: 30%;
 display: flex;
 align-items: center;
 
+}
+
+.logo_main img{
+    width: 40%;
 }
 .booking_button{
     display: flex;
@@ -140,17 +158,687 @@ align-items: center;
 }
 .booking_button button{
     margin: 0;
+    padding: 10px 40px;
+    border-radius: 5px;
+    font-size: 1rem;
 }
 .main{
     width: 100%;
-    height: 92vh;
+    height: 94vh;
     background: url(../images/banner.png);
     background-size: cover;
     background-position: center;
 }
 
+.info_container{
+    width: 90%;
+    margin: auto;
+    height: 100%;
+}
+
+.information_flexbox{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.flex1{
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+.flex2{
+    width: 70%;
+}
+
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.text{
+    color: white;
+    
+}
+
+.text h2{
+    margin: 0;
+    font-size:clamp(1.5rem, 4vw,3rem);
+    font-weight: 500;
+}
+
+
+.white_background_container{
+    width: 100%;
+    background: white;
+    padding: 60px 0px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.white_background_holder{
+    width: 90%;
+    margin: auto;
+}
+
+.basic_info_holder{
+    display: flex;
+  
+}
+
+.basic_info{
+    width: 50%;
+}
+.basic_info h2{
+    font-size: clamp(1rem,2vw,1.5rem);
+    font-weight: bold;
+    margin-bottom: 7px;
+    margin-top: 0;
+}
+
+.basic_info h4{
+    font-size: .8rem;
+    font-weight: 300;
+    margin: 0;
+}
+
+
+
+
+.login{
+    text-align: center;
+}
+
+.login a{
+    color: white;
+}
+
+.name_details{
+    display: flex;
+    justify-content:space-between ;
+    padding-top: 10px;
+}
+
+.first_name{
+   
+    width:40%;
+}
+
+.first_name input{
+    outline: none;
+}
+
+
+.last_name{
+    border: none;
+    
+    width:40%;
+    
+}
+
+.last_name input{
+    outline: none;
+}
+
+.other_details{
+    display: flex;
+    justify-content:space-between ;
+    padding-top: 15px;
+}
+
+.email_1{
+    
+    width:40%;
+}
+
+.email_1 input{
+    outline: none;
+}
+
+
+.country{
+    
+    width:40%;
+}
+
+.country input{
+    outline: none;
+}
+
+.number{
+  
+    width:40%;
+    padding: 10px;
+    padding-left: 0;
+}
+
+.number input{
+    outline: none;
+}
+
+.button_holder{ 
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.button_holder_flex button{
+    border: 2px solid black;
+    padding: 10px 25px;
+}
+
+.button_holder_flex button:nth-child(1){
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+
+.button_holder_flex button:nth-child(2){
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border: 2px solid black;
+}
+
+.undergraduate{
+    width: 20% ;
+    padding-right: 30px;
+}
+
+.undergraduate button{
+    width: 100%;
+    background: black;
+    padding: 12px 50px ;
+    color: white;
+    font-size: .9rem;
+}
+
+.post_graduate{
+    width: 20%;
+}
+
+.post_graduate button{
+    width: 100%;
+    border: 1px solid black;
+    padding: 12px 50px;
+    background: white;
+    color: black;
+    font-size: .9rem;
+    
+}
+
+.next_page{
+    width: 60%;
+    display:flex ;
+    justify-content: flex-end;
+}
+
+.next_page button{
+    width: 25%;
+    padding: 12px 50px;
+    font-size: .9rem;
+}
+
+.description_holder{
+    display: flex;
+    margin-top: 60px;
+}
+
+.description{
+    width: 80%;
+}
+
+.description h2{
+    font-size: 1rem;
+}
+
+.description h1{
+    margin: 0;
+    font-weight: 300;
+    font-size: clamp(1.5rem, 3rem, 2rem);
+}
+
+.description p{
+    line-height: 1.7;
+    font-size: .9rem;
+    margin: 0;
+}
+
+.details{
+    margin-top: 20px;
+}
+
+
+.details{
+    display: flex;
+}
+
+.details_1{
+    display: flex;
+    width: 50%;
+    align-items: center;
+    
+}
+
+.image img{
+    width: 30px;
+    padding-right: 10px;
+}
+
+.text2{
+    font-size: .9rem;
+    color: rgb(121, 121, 121);
+}
+
+.image_holder{
+    width: 130%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    transition: .3s;
+}
+
+
+.image_container{
+   width: 100%;
+   overflow-x: hidden;
+
+}
+
+.circles{
+    position: relative;
+    margin-top: 10px;
+}
+
+.circle_holder{
+    display: flex;
+    position: absolute;
+    right: 25%;
+    transform: translateX(-25%);
+}
+
+.circle_1,.circle_2{
+    width: 10px;
+    height: 10px;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin: 0px 10px;
+    cursor: pointer;
+}
+
+.circle_1{
+    background-color: black;
+}
+
+
+.image1, .image2, .image3{
+   width: 30%;
+   height: inherit;
+   background-color: blue;
+   cursor: pointer;
+}
+
+.image1{
+    background: url(https://images.unsplash.com/photo-1578898887155-72e9a7da1fb3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80);
+    background-size: cover;
+    background-position: bottom;
+}
+
+.image2{
+    background: url(https://images.unsplash.com/photo-1577791465291-35b823edfeba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80);
+    background-size: cover;
+    background-position: bottom;
+}
+
+.image3{
+    background: url(https://images.unsplash.com/photo-1578898887193-90f85d96cd7c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80);
+    background-size: cover;
+    background-position: bottom;
+}
+
+
+form p{
+    margin: 0;
+    font-size: .8rem;
+    margin-top: 15px;
+    color: rgb(88, 88, 88);
+    display: flex;
+    align-items: center;
+}
+
+form input{
+    margin-top: 5px;
+    border: none;
+    border-bottom: 1px solid gray;
+    width: 90%;
+}
+
+form input[type="radio"]{
+    width: fit-content;
+    margin: 0;
+}
+
+form input[type="checkbox"]{
+    width: fit-content;
+    margin: 0;
+}
+
+form input:focus{
+    border-bottom: 1px solid blue;
+}
+
+form{
+    margin-top: 20px;
+}
+
+.basic_info_2{
+    width: 50%;
+}
+
+.numbers{
+    display: flex;
+    
+}
+
+.number1,.number2,.number3{
+    width: 28px;
+    border: 3px solid black;
+    padding: 10px;
+    height: 20px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-weight: bold;
+    
+}
+
+.number1{
+    color: white;
+    background-color: black;
+}
+
+.number1_holder p{
+    font-size: .7rem;
+}
+
+.numbers p{
+    margin: 0;
+}
+
+.numbers_description{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    font-size: .7rem;
+}
+
+.line{
+    width: 50%;
+    display: flex;
+    align-items: center;
+
+}
+
+hr{
+    width: 100%;
+}
+
+.basic_info_main_2{
+    display: flex;
+    justify-content: space-between;
+}
+
+.basic_info_main_2 input{
+    margin-top: 10px;
+    width: 98%;
+    outline: none;
+}
+
+.basic_info_flex{
+    width: 46%;
+    position: relative;
+}
+
+.basic_info_flex button{
+    border: 2px solid black;
+    padding: 15px 55px;
+    font-weight: bold;
+    color: white;
+    background-color: blue;
+    border: none;
+}
+
+.basic_info_flex:nth-child(1) button{
+    background-color: black;
+}
+
+.next_button{
+   position: absolute;
+   right: 0;
+}
+
+
+.booking_rooms{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.booking_room1{
+    display: flex;
+}
+
+.booking_room2{
+    display: flex;
+    align-items: center;
+}
+
+.booking_room1 input[type="radio"]{
+    width: fit-content;
+    margin: 15px;
+}
+
+.booking_room2 input[type="radio"]{
+    width: fit-content;
+    margin: 15px;
+}
+
+
+.booking_info_flex1{
+    width: 30%;
+}
+
+.booking_info_flex1 img{
+    width: 30%;
+}
+
+.booking_info_flex2{
+    width: 30%;
+}
+
+.booking_info_flex2 img{
+    width: 40%;
+}
+
+.booking_info_flex3 {
+    width: 40%;
+}
+
+.booking_info_flex3 img{
+    width: 45%;
+    height: 5%;
+}
+
+
+
+.floors{
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.floor_number{
+    width: 50%;
+}
+
+.floor_number p{
+    margin-bottom: 10px;
+}
+
+form h3{
+    margin: 0;
+}
+
+.floor_number select{
+    width: 50%;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+.room_numbers{
+    width: 50%;
+}
+
+.rooms{
+    display: flex;
+    align-items: center;
+}
+
+.room_numbers p{
+    margin-bottom: 10px;
+}
+.rooms h1{
+    color: black;
+    font-size: .9rem;
+    font-weight: 900;
+    padding-right: 10px;
+    margin: 0;
+    
+
+}
+
+.rooms select{
+    width: 50%;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+.answer_flex{
+    width: 50%;
+    position: relative;
+}
+
+
+.answer_button{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+   
+}
+
+.answer_button button:nth-child(1){
+    width: 20%;
+    padding: 10px 20px;
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+    margin-right: 20px;
+}
+
+.answer_button button:nth-child(2){
+    width: 20%;
+    padding: 10px 20px;
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+}
+
+
+.add_roomate_info{
+    display: flex;
+    justify-content:space-between ;
+}
+
+.initials{
+    width:40%;
+    padding-left: 0;
+}
+
+.initials input{
+    outline: none;
+}
+
+.description{
+    margin-top:30px;
+}
+
+.button_yes,.button_no{
+    background-color: white !important;
+    border: black 2px solid !important;
+    color: black !important;
+    padding: 6px 35px !important;
+    margin-top: 10px;
+}
+
+.button_yes:hover,.button_no:hover{
+    background-color: black !important;
+    color: white !important;
+}
+
+.add_roomate{
+    display: flex;
+    justify-content: space-between;
+}
+
+.add_flex{
+    width: 45%;
+}
+
+.add_flex:nth-child(2){
+    display: flex;
+    align-items: flex-end;
+}
+
+.billing_flexbox{
+    display: flex;
+    justify-content: space-between;
+}
+
+.billing_flex{
+    width: 45%;
+}
+
+
+
+.replicate_basic_info{
+    padding-left: 10px;
+    font-size: .9rem;
+}
+
+.payment_flexbox{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.payment_flex{
+    display: flex;
+    align-items: center;
+}
+
+b{
+    margin-left: 10px;
+}
+
+
 /*booking style ends here*/
-
-
 
 
