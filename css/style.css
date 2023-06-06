@@ -71,13 +71,13 @@ h1{
 
 .email{
     border: none;
-    border-bottom: 1px solid rgb(101, 101, 101);
+    border-bottom: 1px solid grey;
     width: 100%;
     outline: none;
     margin-top:20px;
-    padding: 20px;
+    
     padding-left: 0;
-    font-size: 1rem;
+    font-size: .8rem;
   
 
 }
