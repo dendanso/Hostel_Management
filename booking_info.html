@@ -9,7 +9,7 @@
                 <div class="booking_info_flex1">
                     
                     <div class="booking_room1">
-                        <input type="radio">
+                        <input type="radio" name="room" value="one in a room">
                         <img src="./images/bed_icon.png" alt="Baseline Bed icons">
                     </div>
                    
@@ -17,7 +17,7 @@
                 <div class="booking_info_flex2">
 
                     <div class="booking_room1">
-                        <input type="radio">
+                        <input type="radio" name="room" value="two in a room">
                         <img src="./images/two_bed_icon.svg" alt="Baseline bed icons">
                     </div>
                    
@@ -25,7 +25,7 @@
                 <div class="booking_info_flex3">
 
                     <div class="booking_room2">
-                        <input type="radio">
+                        <input type="radio" name="room" value="three in a room">
                         <img src="./images/three_bed-icon.png" alt="baseline bed icons">
                     </div>
                     
@@ -66,13 +66,13 @@
             </div>
 
             <p></p>
-            <button ng-click="basic_info_two()">Back</button>
+            <button ng-click="basic_info_two()" class="back_button">Back</button>
         </div>
 
         <div class="basic_info_flex">
             <p>Are you booking this room alone?</p>
-            <button class="button_yes">Yes</button>
-            <button class="button_no">No</button>
+            <button class="button_yes roomate_yes" ng-click="roomate_yes()">Yes</button>
+            <button class="button_no roomate_no" ng-click="roomate_no()">No</button>
             
             
             <div class="add_roomate">

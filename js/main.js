@@ -28,6 +28,11 @@ app.config(function($routeProvider){
             templateUrl:'billing_info.html',
             controller:'myController'
         }
+    ) .when(
+        '/complete',{
+            templateUrl:'form_complete.html',
+            controller:'myController'
+        }
     )
     
 })
@@ -41,6 +46,13 @@ app.controller('myController',function($scope,$location){
     const number1 = document.querySelector('.number1')
     const number2 = document.querySelector('.number2')
     const number3 = document.querySelector('.number3')
+    const sub_heading = document.querySelector('.sub_heading')
+    const button_yes = document.querySelector('.button_yes');
+    const button_no = document.querySelector('.button_no');
+    const undergradute = document.querySelector('.undergrad')
+    const postgraduate = document.querySelector('.postgraduate')
+    const roomate_yes = document.querySelector('.roomate_yes');
+    const roomate_no = document.querySelector('.roomate_no')
 
     $scope.basic_info_one = ()=>{
         $location.path('/')
@@ -79,6 +91,64 @@ app.controller('myController',function($scope,$location){
         number2.style.color = "black"
         number3.style.backgroundColor = "black"
         number3.style.color = "white"
+    }
+
+    $scope.complete_form = ()=>{
+        heading.textContent = "Registration Complete"
+        sub_heading.style.display = 'none'
+        $location.path('/complete')
+    }
+
+    $scope.male=()=>{
+       
+        button_yes.style.backgroundColor = "black";
+        button_yes.style.color="white"
+
+        button_no.style.backgroundColor = "white";
+        button_no.style.color="black"
+        
+    }
+
+    $scope.female=()=>{
+
+        button_yes.style.backgroundColor = "white";
+        button_yes.style.color="black"
+
+        button_no.style.backgroundColor = "black";
+        button_no.style.color="white"
+        
+    }
+
+    $scope.undergraduate = ()=>{
+        undergradute.style.backgroundColor = "black";
+        undergradute.style.color = "white"
+
+        postgraduate.style.backgroundColor = "white";
+        postgraduate.style.color = "black"
+    }
+
+    $scope.postgraduate = ()=>{
+        undergradute.style.backgroundColor = "white";
+        undergradute.style.color = "black"
+
+        postgraduate.style.backgroundColor = "black";
+        postgraduate.style.color = "white"
+    }
+
+    $scope.roomate_yes = ()=>{
+        roomate_yes.style.backgroundColor = 'black';
+        roomate_yes.style.color="white";
+
+        roomate_no.style.backgroundColor = 'white';
+        roomate_no.style.color= 'black'
+    }
+
+    $scope.roomate_no = ()=>{
+        roomate_yes.style.backgroundColor = 'white';
+        roomate_yes.style.color="black";
+
+        roomate_no.style.backgroundColor = 'black';
+        roomate_no.style.color= 'white'
     }
 })
 

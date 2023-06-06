@@ -31,22 +31,22 @@
             </div>
            
             <p></p>
-            <button ng-click="booking_info()">Back</button>
+            <button ng-click="booking_info()" class="back_button">Back</button>
         </div>
         <div class="basic_info_flex">
-            <p><input type="radio"> <b>Make Payment</b></p>
-            <div class="payment_flexbox">
-                <input type="radio">
+            <p><input type="radio" name="payment"> <b>Make Payment</b></p>
+            <div class="payment_flexbox" >
+                <input type="radio" name="momo">
                 <div class="payment_flex">
                     
                     <img src="./images/mtn_momo.png" alt="payment icon">
                 </div>
-                <input type="radio">
+                <input type="radio" name="momo">
                 <div class="payment_flex">
                   
                     <img src="./images/vodafone.png" alt="payment icon">
                 </div>
-                <input type="radio">
+                <input type="radio" name="momo">
                 <div class="payment_flex">
                    
                     <img src="./images/airtel.png" alt="payment icon">
@@ -54,14 +54,14 @@
 
                 <div class="payment_flex">
 
-                    <input type="radio"> <b>Bank Transfer</b>
+                    <input type="radio" name="momo"> <b>Bank Transfer</b>
                     
                 </div>
             </div>
-            <p><input type="radio"> <b>Make Payment Later</b></p>
+            <p><input type="radio" name="payment"> <b>Make Payment Later</b></p>
             <p style="color:red">Note: Payment Confirms your Booking. Room will not be reserved for until payment have been made. </p>
             <p></p>
-            <button>Next</button>
+            <button ng-click="complete_form()" class="next_button">Next</button>
         </div>
     </div>
     

@@ -538,6 +538,7 @@ form{
 
 .basic_info_2{
     width: 50%;
+    position: relative;
 }
 
 .numbers{
@@ -603,7 +604,7 @@ hr{
     width: 46%;
     position: relative;
 }
-
+/*
 .basic_info_flex button{
     border: 2px solid black;
     padding: 15px 55px;
@@ -611,16 +612,38 @@ hr{
     color: white;
     background-color: blue;
     border: none;
+    
 }
 
 .basic_info_flex:nth-child(1) button{
     background-color: black;
 }
 
+.basic_info_flex:nth-child(2) button{
+    position: absolute;
+    right: 0;
+}*/
+
 .next_button{
    position: absolute;
    right: 0;
+   border: 2px solid black;
+   padding: 15px 55px;
+   font-weight: bold;
+   color: white;
+   background-color: blue;
+   border: none;
 }
+
+.back_button{
+    
+    border: 2px solid black;
+    padding: 15px 55px;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    border: none;
+ }
 
 
 .booking_rooms{
@@ -774,11 +797,12 @@ form h3{
 }
 
 .button_yes,.button_no{
-    background-color: white !important;
-    border: black 2px solid !important;
-    color: black !important;
-    padding: 6px 35px !important;
-    margin-top: 10px;
+    background-color: white ;
+    border: black 2px solid; 
+    color: black ;
+    padding: 6px 35px ;
+    margin-top: 10px ;
+    position:  relative ;
 }
 
 .button_yes:hover,.button_no:hover{
@@ -876,6 +900,37 @@ b{
     transform: scale(5) translate(-30%,-50%);
 }
 
+/*From Complete stylings */
+.complete{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.complete_holder{
+    text-align: center;
+}
+
+.complete_holder img{
+    width: 5%;
+}
+
+.complete_holder p{
+    width: 50%;
+    margin: auto;
+    line-height: 1.7;
+    font-size: .9rem;
+}
+
+.complete_holder button{
+    padding: 20px 45px;
+    color: white;
+    background-color: blue;
+    border: none;
+    font-weight: bold;
+    margin-top: 30px;
+}
 
 /*booking style ends here*/
 
