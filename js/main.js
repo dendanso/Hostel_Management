@@ -47,7 +47,7 @@ app.controller('myController',function($scope,$location){
         
     }
 
-    $scope.basic_info_two = ()=>{
+    /*$scope.basic_info_two = ()=>{
         $location.path('/basic_info2')
         heading.textContent = "Basic Information"
 
@@ -70,16 +70,160 @@ app.controller('myController',function($scope,$location){
         number2.style.color = "white"
         number3.style.backgroundColor = "white"
         number3.style.color = "black"
-    }
+    }*/
 
-    $scope.billing_info = ()=>{
+   /* $scope.billing_info = ()=>{
         $location.path('/billing_info')
         heading.textContent = "Payment Information"
         number2.style.backgroundColor = "white"
         number2.style.color = "black"
         number3.style.backgroundColor = "black"
         number3.style.color = "white"
+    }*/
+
+    $scope.hostel_forms=()=>{
+        const fname = document.querySelector('.fname').value
+        const lname = document.querySelector('.lname').value
+        const course = document.querySelector('.course').value
+        const country=document.querySelector('.country1').value
+        const basic_info_one_validation = fname==''&&lname==''&&course==''&&country==''
+        const firstname = document.querySelector('.firstname')
+        const lastname = document.querySelector('.lastname')
+        const corse=document.querySelector('.corse')
+        const contry=document.querySelector('.contry')
+
+        if(fname==''){
+            firstname.style.color="red"
+        }
+        if(lname==''){
+            lastname.style.color="red"
+        }
+        if(course==''){
+            corse.style.color="red"
+        }
+        if(country==''){
+            contry.style.color="red"
+        }
+        
+        if(basic_info_one_validation){
+            alert('empty fields')
+        }else{
+            $location.path('/basic_info2')
+            heading.textContent = "Basic Information"
+    
+            number1.style.backgroundColor = "black"
+            number1.style.color = "white"
+            number2.style.backgroundColor = "white"
+            number2.style.color = "black"
+            number3.style.backgroundColor = "white"
+            number3.style.color = "black"
+
+        }
     }
+
+
+    $scope.hostel_forms1=()=>{
+         const contact=document.querySelector('.contact').value
+         const email=document.querySelector('.email').value
+         const address=document.querySelector('.address').value
+         const emergency=document.querySelector('.emergency').value
+         const coninfo=document.querySelector('.coninfo').value
+         const basic_info_main_validation1 = contact==''&&email==''&&address==''&&emergency==''&&coninfo==''
+         const contact1=document.querySelector('.contact1')
+         const email1=document.querySelector('.email1')
+         const address1=document.querySelector('.address1')
+         const emergency1=document.querySelector('.emergency1')
+         const coninfo1=document.querySelector('.coninfo1')
+
+         if(contact==''){
+            contact1.style.color="red"
+         }
+         if(email==''){
+            email1.style.color="red"
+         }
+         if(address==''){
+            address1.style.color="red"
+         }
+         if(emergency==''){
+            emergency1.style.color="red"
+         }
+         if(coninfo==''){
+            coninfo1.style.color="red"
+         }
+         if(basic_info_main_validation1){
+            alert('empty fields')
+         }else{
+            $location.path('/booking_info')
+        heading.textContent = "Booking Information"
+
+        number1.style.backgroundColor = "white"
+        number1.style.color = "black"
+        number2.style.backgroundColor = "black"
+        number2.style.color = "white"
+        number3.style.backgroundColor = "white"
+        number3.style.color = "black"
+         }
+
+
+    }
+
+    $scope.billing=()=>{
+        
+        const firstname11 = document.querySelector('.firstname11').value
+        const lastname11 = document.querySelector('.lastname11').value
+        const email11 = document.querySelector('.email11').value
+        const country11 = document.querySelector('.country11').value
+        const address11 = document.querySelector('.address11').value
+        const phonenumber = document.querySelector('.phonenumber').value
+        const basic_info_one_validation = firstname11==''&&lastname11==''&&email11==''&&address11==''&&phonenumber==''
+        const first_name11 = document.querySelector('.first_name11')
+        const last_name11 = document.querySelector('.last_name11')
+        const email_address = document.querySelector('.email_address')
+        const country12=document.querySelector('.country12')
+        const address12 = document.querySelector('.address12')
+        const phone_number = document.querySelector('.phone_number')
+
+        if(firstname11==''){
+            first_name11.style.color="red"
+        }
+        if(lastname11==''){
+            last_name11.style.color="red"
+        }
+       
+        if(email11==''){
+            email_address.style.color="red"
+        }
+        if(country11==''){
+            country12.style.color="red"
+        }
+        if(address11==''){
+            address12.style.color="red"
+        }
+        if(phonenumber==''){
+            phone_number.style.color="red"
+        }
+        
+
+       
+       
+        
+        if(basic_info_one_validation){
+            alert('empty fields')
+        }else{
+            $location.path('/basic_info2')
+            heading.textContent = "Basic Information"
+    
+            number1.style.backgroundColor = "black"
+            number1.style.color = "white"
+            number2.style.backgroundColor = "white"
+            number2.style.color = "black"
+            number3.style.backgroundColor = "white"
+            number3.style.color = "black"
+
+        }
+  
+    }
+        
 })
 
 
@@ -177,9 +321,5 @@ arrow_left.addEventListener('click',()=>{
 //Gallery Functions Ends here
 
 
-//Error handling
-const text =document.querySelector('.name1');
-const first_name =document.querySelector('.first_name')
-const validation = document.querySelector('.valid');
-const hostel_form = document.querySelector('#hostel_form');
+
 

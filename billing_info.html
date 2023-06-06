@@ -1,31 +1,31 @@
 
-<form action="">
+<form action="" ng-submit="billing()">
     <h3>Billing Information</h3>
     <div class="basic_info_main_2">
         <div class="basic_info_flex">
             <div class="billing_flexbox">
                 <div class="billing_flex">
-                    <p>First Name</p>
-                <input type="text" name="" id="">
+                    <p class="first_name11">First Name</p>
+                <input type="text" name="" id="" class="firstname11">
     
-                <p>Email Address</p>
-                <input type="email" required>
+                <p class="email_address">Email Address</p>
+                <input type="email" class="email11">
     
-                <p>Address</p>
-                <input type="text" required>
+                <p class="address12">Address</p>
+                <input type="text" class="address11">
                 <p><input type="checkbox"><span class="replicate_basic_info">Same as Basic Information</span></p>
                 
                 </div>
 
                 <div class="billing_flex">
-                    <p>Last Name</p>
-                <input type="text" name="" id="">
+                    <p class="last_name11">Last Name</p>
+                <input type="text" name="" id="" class="lastname11">
     
-                <p>Country</p>
-                <input type="email" required>
+                <p class="country12">Country</p>
+                <input type="text"  class="country11">
     
-                <p>Phone Number</p>
-                <input type="text" required>
+                <p class="phone_number">Phone Number</p>
+                <input type="text" class="phonenumber">
                 </div>
                 
             </div>
@@ -34,7 +34,7 @@
             <button ng-click="booking_info()">Back</button>
         </div>
         <div class="basic_info_flex">
-            <p><input type="radio"> <b>Make Payment</b></p>
+            <p><input type="radio" name="make_payment"> <b>Make Payment</b></p>
             <div class="payment_flexbox">
                 <input type="radio">
                 <div class="payment_flex">
