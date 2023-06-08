@@ -1,0 +1,138 @@
+@media only screen and (max-width:1367px){
+   .description p{
+    display: none;
+   }
+   .details {
+    display: none;
+   }
+   .white_background_container {
+    
+    padding: 19px 0px;
+    
+    } 
+    .description_holder {
+       
+        margin-top: 20px;
+    }
+    form {
+        margin-top: -8px;
+    }
+    .other_details {
+        display: flex;
+        justify-content: space-between;
+         padding-top: 0px; 
+    }
+    .number {
+        width: 40%;
+        padding: 10px;
+        padding-left: 0;
+    }
+    
+}
+@media only screen and (max-width:900px){
+    .information_flexbox {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        flex-direction: column;
+    }
+    .flex1 {
+        width: 30%;
+        display: none;
+        align-items: center;
+    }
+    .flex2 {
+        width: 100%;
+    }
+    nav {
+        width: 80%;
+        margin: auto;
+        display: none;
+    }
+    .basic_info_holder {
+        display: block;
+    }
+    .basic_info {
+        width: 100%;
+    }
+    .basic_info_2 {
+        width: 100%;
+    }
+    .name_details {
+        display: block;
+        justify-content: space-between;
+        padding-top: 10px;
+    }
+    .other_details {
+        display: block;
+        justify-content: space-between;
+        padding-top: 15px;
+    }
+    .first_name {
+        width: 100%;
+    }
+    .last_name {
+        border: none;
+        width: 100%;
+    }
+    .country {
+        width: 100%;
+    }
+    .number {
+        width: 100%;
+        padding: 10px;
+        padding-left: 0;
+    }
+    .email_1 {
+        width: 100%;
+    }
+    .button_holder {
+        width: 100%;
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+        margin-top: 15px;
+    }
+    .button_holder_flex{
+        margin-top: 20px;
+        text-align: left;
+    }
+    .button_holder {
+    width: 100%;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-top: 15px;
+    }
+    .image_holder{
+        width: 215%;
+    }
+    .main{
+          height: 100vh;
+    }
+
+    .basic_info_main_2{
+        display: block;
+    }
+
+    .basic_info_flex{
+        width: 100%;
+    }
+
+    .basic_info_flex:nth-child(1) button {
+        display: none;
+     
+    }
+
+   .description_holder{
+    margin-top: 90px;
+   }
+
+   .next_button{
+    left: 0;
+    width: fit-content;
+   }
+}
