@@ -1,15 +1,15 @@
 
-<form action="" id="hostel_forms">
+<form action="" id="hostel_forms" class="booking_form" ng-submit="bookingForm($event)">
 
     <div class="basic_info_main_2">
         <div class="basic_info_flex">
-            <p>Select Room</p>
+            <p class="select_room">Select Room</p>
             <div class="booking_rooms">
                 
                 <div class="booking_info_flex1">
                     
                     <div class="booking_room1">
-                        <input type="radio">
+                        <input type="radio" name="room" value="one in a room" id="room_1">
                         <img src="./images/bed_icon.png" alt="Baseline Bed icons">
                     </div>
                    
@@ -17,7 +17,7 @@
                 <div class="booking_info_flex2">
 
                     <div class="booking_room1">
-                        <input type="radio">
+                        <input type="radio" name="room" value="two in a room" id="room_2">
                         <img src="./images/two_bed_icon.svg" alt="Baseline bed icons">
                     </div>
                    
@@ -25,7 +25,7 @@
                 <div class="booking_info_flex3">
 
                     <div class="booking_room2">
-                        <input type="radio">
+                        <input type="radio" name="room" value="three in a room" id="room_3">
                         <img src="./images/three_bed-icon.png" alt="baseline bed icons">
                     </div>
                     
@@ -39,10 +39,10 @@
             <div class="floors">
                 <div class="floor_number">
                     <p>Select floor</p>
-                    <select>
-                        <option value="0">Floor 1</option>
-                        <option value="1">Floor 2</option>
-                        <option value="2">Floor 3</option>
+                    <select id="hostel_floors">
+                        <option value="Floor 1">Floor 1</option>
+                        <option value="Floor 2">Floor 2</option>
+                        <option value="Floor 3">Floor 3</option>
                     </select>
 
 
@@ -54,10 +54,10 @@
 
                     <div class="rooms">
                         <h1>A -</h1>
-                        <select>
-                            <option value="0">01</option>
-                            <option value="1">02</option>
-                            <option value="2">03</option>
+                        <select id="hostel_room">
+                            <option value="Room 01">01</option>
+                            <option value="Room 02">02</option>
+                            <option value="Room 03">03</option>
                         </select>
                     </div>
                    
@@ -66,25 +66,28 @@
             </div>
 
             <p></p>
-            <button ng-click="basic_info_two()">Back</button>
+            <button ng-click="basic_info_two()" class="back_button">Back</button>
         </div>
 
         <div class="basic_info_flex">
-            <p>Are you booking this room alone?</p>
-            <button class="button_yes">Yes</button>
-            <button class="button_no">No</button>
+            <p>Are you booking this room with a roomate?</p>
+            <div class="roomate_holder">
+                <div class="button_yes roomate_yes" ng-click="roomate_yes()" value="yes">Yes</div>
+                <div class="button_no roomate_no" ng-click="roomate_no()" value="no">No</div>
+            </div>
+           
             
             
             <div class="add_roomate">
                 <div class="add_flex">
                     <p>Add Roomate</p>
-                    <input type="text" placeholder="Full Name">
-                    <input type="text" placeholder="Email Address">
+                    <input type="text" placeholder="Full Name" class="rommate1_name">
+                    <input type="text" placeholder="Email Address" class="rommate1_contact">
                 </div>
                 <div class="add_flex">
                     <div class="content">
-                        <input type="text" placeholder="Full Name">
-                        <input type="text" placeholder="Email Address">
+                        <input type="text" placeholder="Full Name" class="roomate2_name">
+                        <input type="text" placeholder="Email Address" class="rommate2_contact">
                     </div>
                     
                 </div>

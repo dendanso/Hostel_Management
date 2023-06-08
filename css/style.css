@@ -23,8 +23,19 @@ body{
 
 }
 
-.admin_signin__flexbox{
+.admin_signin_flexbox{
     display: flex;
+}
+
+.sign_in{
+    border: 2px solid black;
+   padding: 15px 55px;
+   font-weight: bold;
+   color: white;
+   background-color: blue;
+   border: none;
+   width: fit-content;
+   margin-top: 30px;
 }
 
 .flex{
@@ -55,9 +66,7 @@ body{
     transform: translate(-15%,-18%);
 }
 
-.signin_holder{
-    margin-top: 90px;
-}
+
 
 h1{
     font-weight: 900;
@@ -87,11 +96,33 @@ h1{
     border-bottom: 1px solid rgb(101, 101, 101);
     width: 100%;
     outline: none;
-    margin-top:25px;
     padding: 20px;
     padding-left: 0;
     font-size: 1rem;
 }
+
+.home_link{
+    color: black;
+}
+
+
+.material-symbols-outlined {
+    position: absolute;
+    top: 5%;
+    left:55%;
+    transform: translate(-55%,-5%);
+    font-size: 2rem;
+    cursor: pointer;
+
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+
+
 
 /*button{
     color: white;
@@ -372,6 +403,25 @@ input::-webkit-inner-spin-button {
     
 }
 
+.button_holder_flex{
+    display: flex;
+}
+
+.undergrad,.postgraduate{
+    background-color: white ;
+    border: black 2px solid; 
+    color: black ;
+    padding: 6px 35px ;
+    margin-top: 10px ;
+    position:  relative ;
+    height: fit-content;
+    cursor: pointer;
+}
+
+.postgraduate{
+    margin-left:10px
+}
+
 .next_page{
     width: 60%;
     display:flex ;
@@ -538,6 +588,7 @@ form{
 
 .basic_info_2{
     width: 50%;
+    position: relative;
 }
 
 .numbers{
@@ -603,7 +654,7 @@ hr{
     width: 46%;
     position: relative;
 }
-
+/*
 .basic_info_flex button{
     border: 2px solid black;
     padding: 15px 55px;
@@ -611,16 +662,38 @@ hr{
     color: white;
     background-color: blue;
     border: none;
+    
 }
 
 .basic_info_flex:nth-child(1) button{
     background-color: black;
 }
 
+.basic_info_flex:nth-child(2) button{
+    position: absolute;
+    right: 0;
+}*/
+
 .next_button{
    position: absolute;
    right: 0;
+   border: 2px solid black;
+   padding: 15px 55px;
+   font-weight: bold;
+   color: white;
+   background-color: blue;
+   border: none;
 }
+
+.back_button{
+    
+    border: 2px solid black;
+    padding: 15px 55px;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    border: none;
+ }
 
 
 .booking_rooms{
@@ -774,16 +847,27 @@ form h3{
 }
 
 .button_yes,.button_no{
-    background-color: white !important;
-    border: black 2px solid !important;
-    color: black !important;
-    padding: 6px 35px !important;
+    background-color: white ;
+    border: black 2px solid; 
+    color: black;
+    padding: 6px 35px;
     margin-top: 10px;
+    position:  relative;
+    height: fit-content;
+    cursor: pointer;
+}
+
+.button_no{
+    margin-left: 10px;
 }
 
 .button_yes:hover,.button_no:hover{
     background-color: black !important;
     color: white !important;
+}
+
+.roomate_holder{
+    display: flex;
 }
 
 .add_roomate{
@@ -876,6 +960,72 @@ b{
     transform: scale(5) translate(-30%,-50%);
 }
 
+/*From Complete stylings */
+.complete{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.complete_holder{
+    text-align: center;
+}
+
+.complete_holder img{
+    width: 5%;
+}
+
+.complete_holder p{
+    width: 50%;
+    margin: auto;
+    line-height: 1.7;
+    font-size: .9rem;
+}
+
+.complete_holder button{
+    padding: 20px 45px;
+    color: white;
+    background-color: blue;
+    border: none;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.email_1{
+    display: flex;
+}
+
+.email_1 div{
+    margin-left: 10px;
+}
+
+.momo_number, .voda_cash,.tigo_wallet,.bank{
+    border: gray 1px solid;
+    padding: 10px;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    background-color: white;
+    display: none;
+}
+
+.bank{
+    top: -5%;
+}
+
+.momo_number{
+    left: 5%;
+    transform: translateY(-5%);
+}
+
+.voda_cash{
+    left: 30%;
+}
+
+.momo_number p, .voda_cash p, .tigo_wallet p, .bank p{
+    margin: 0;
+}
 
 /*booking style ends here*/
 

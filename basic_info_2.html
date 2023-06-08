@@ -1,5 +1,5 @@
 
-<form action="" id="hostel_forms" ng-submit="hostel_forms1()">
+<form action="" id="hostel_forms" ng-submit="hostel_forms1($event)">
 
     <div class="basic_info_main_2">
         <div class="basic_info_flex">
@@ -12,7 +12,7 @@
             <p class="address1">Address</p>
             <input type="text"  class="address">
             <p></p>
-            <button ng-click="basic_info_one()">Back</button>
+            <button ng-click="basic_info_one()" class="back_button">Back</button>
         </div>
         <div class="basic_info_flex">
             <p class="emergency1">Emergency Contact</p>
@@ -23,7 +23,7 @@
             <input type="number"  class="coninfo">
 
             <p>Medical Condition</p>
-            <input type="text" placeholder="Please if you have any existing medical condition">
+            <input type="text" placeholder="Please if you have any existing medical condition" class="medical_condition">
             <p></p>
             <button class="next_button" ng-click="booking_info()">Next</button>
         </div>

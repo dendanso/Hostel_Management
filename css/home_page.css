@@ -13,22 +13,24 @@ body{
 
 .home_page_flexbox{
     display: flex;
+    position: relative;
 }
 
 .home_flex{
     height: 100vh;
+    position: relative;
 }
 
 .home_flex:nth-child(1){
     background: url(../images/home_image.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 60%;
+    width: 50%;
     text-align: center;
 }
 
 .home_flex:nth-child(2){
-    width: 40%;
+    width: 50%;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -83,8 +85,7 @@ p{
 
 .enquiries{
     position: absolute;
-    top: 90%;
-    right:5%;
-    transform: translateY(-5%);
+    bottom: 5%;
+    left:50%;
+    transform: translate(-50%,-5%);
 }
-

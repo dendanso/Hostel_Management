@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="./css/style.css">
 
     <title>BASELINE HOSTEL</title>
@@ -20,17 +21,30 @@
                 </div>
 
                 <div class="flex">
+
+                    
+
                     <div class="signin_holder">
+                        <a href="./index.html" class="home_link">
+                            <span class="material-symbols-outlined home">
+                                home
+                            </span>
+                        </a>
+                        
                         <h1>Sign In</h1>
                         <p>Welcome to Baseline Hostel. Let's get you started.</p>
 
-                        <p><input type="Email" class="email" placeholder="Email Address"></p>
+                        <form action="" id="hostel_signin">
+                            <p><input type="email" class="email signin_email" id="signin_email" placeholder="Email Address"></p>
 
-                        <p><input type="password" class="password" placeholder="Password"></p>
+                            <p><input type="password" class="password signin_password" placeholder="Password"></p>
+    
+                          <input class="sign_in" type="submit">
+                        </form>
 
-                        <button> <a href="">Sign In</a> </button>
+                    
 
-                        <div class="signup"><a href="./register.html">Don't Have an Account? Sign Up.</a></div>
+                        <div class="signup "><a href="./register.html">Don't Have an Account? Sign Up.</a></div>
 
                     </div>
                     <!--<div class="admin"><a href="">Admin? log in here</a></div>-->
@@ -43,6 +57,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.3/angular.min.js" integrity="sha512-KZmyTq3PLx9EZl0RHShHQuXtrvdJ+m35tuOiwlcZfs/rE7NZv29ygNA8SFCkMXTnYZQK2OX0Gm2qKGfvWEtRXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-route/1.8.3/angular-route.min.js" integrity="sha512-y1qD3hz/IAf8W4+/UMLZ+CN6LIoUGi7srWJ3r1R17Hid8x0yXe+1B5ZelkaL1Mjzedzu0Cg3HBvDG02SAgSzBw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-animate/1.8.3/angular-animate.min.js" integrity="sha512-Vhup4/4s+jnmiFsp1Sg1/6jXncRbIBc+fKemYjq1n+nEXthmeASyaWnClWsAV5Sas7WbLMLNYYHw6TxwQE4oPQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="./js/main.js"></script>
+    <script src="./js/auth.js" type="module"></script>
 </body>
 </html>
