@@ -23,25 +23,31 @@
                         <h1>Create Account</h1>
                         <p>Fill this form with the appropriate credentials.</p>
 
-                        <div class="name">
+                        <form action="" id="createAccount">
+                            <div class="name">
                       
                             
-                            <p><input type="name" class="first_name" placeholder="First Name"></p>
-                            <p><input type="name" class="last_name" placeholder="Last Name"></p>
-                        </div>
+                                <p><input type="name" class="first_name" placeholder="First Name"></p>
+                                <p><input type="name" class="last_name" placeholder="Last Name"></p>
+                            </div>
+    
+                            <p><input type="email" class="email email_signup" placeholder="Email"></p>
+                            
+                            <p><input type="number" class="number" placeholder="Phone Number"></p>
+    
+                            <div class="security">
+                                <p><input type="password" class="password passwords" placeholder="Password"></p>
+    
+                                <p><input type="password" class="confirm_password" placeholder="Confirm Password"></p>
+                            </div>
+                                
+                                <button style="color:white; cursor: pointer;">Register</button>
+                            </div>
+    
+                         
+                        </form>
 
-                        <p><input type="email" class="email" placeholder="Email"></p>
-                        
-                        <p><input type="number" class="number" placeholder="Phone Number"></p>
-
-                        <div class="security">
-                            <p><input type="password" class="password" placeholder="Password"></p>
-
-                            <p><input type="password" class="confirm_password" placeholder="Confirm Password"></p>
-
-                        </div>
-
-                        <button><a href="">Register</a></button>
+                       
 
                         <div class="signin"><a href="./admin_signIn.html">Already have an account? Sign In.</a></div>
                     </div>
@@ -49,5 +55,7 @@
             </div>
         </div>
     </div>
+    <script src="./js/signup.js" type="module"></script>
 </body>
+
 </html>

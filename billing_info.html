@@ -1,31 +1,31 @@
 
-<form action="" ng-submit="billing()">
+<form action="" ng-submit="billing($event)">
     <h3>Billing Information</h3>
     <div class="basic_info_main_2">
         <div class="basic_info_flex">
             <div class="billing_flexbox">
                 <div class="billing_flex">
                     <p class="first_name11">First Name</p>
-                <input type="text" name="" id="" class="firstname11">
+                <input type="text" name="" id="billing_firstname" class="firstname11">
     
                 <p class="email_address">Email Address</p>
-                <input type="email" class="email11">
+                <input type="email" class="email11" id="billing_email">
     
                 <p class="address12">Address</p>
-                <input type="text" class="address11">
-                <p><input type="checkbox"><span class="replicate_basic_info">Same as Basic Information</span></p>
+                <input type="text" class="address11" id="billing_address">
+                <p><input type="checkbox" id="replicate" ng-click="replicate()"><span class="replicate_basic_info">Same as Basic Information</span></p>
                 
                 </div>
 
                 <div class="billing_flex">
                     <p class="last_name11">Last Name</p>
-                <input type="text" name="" id="" class="lastname11">
+                <input type="text" name="" id="billing_lastname" class="lastname11">
     
                 <p class="country12">Country</p>
-                <input type="text"  class="country11">
+                <input type="text"  class="country11" id="billing_country">
     
                 <p class="phone_number">Phone Number</p>
-                <input type="text" class="phonenumber">
+                <input type="text" class="phonenumber" id="billing_number">
                 </div>
                 
             </div>
@@ -34,31 +34,45 @@
             <button ng-click="booking_info()" class="back_button">Back</button>
         </div>
         <div class="basic_info_flex">
-            <p><input type="radio" name="payment"> <b>Make Payment</b></p>
+            <p><input type="radio" name="payment" value="Make Payment"> <b>Make Payment</b></p>
             <div class="payment_flexbox" >
-                <input type="radio" name="momo">
+                <input type="radio" name="momo" value="mtn momo" ng-click="mtnMomo()">
                 <div class="payment_flex">
-                    
+                    <div class="momo_number">
+                        <p>0557525639</p>
+                    </div>
                     <img src="./images/mtn_momo.png" alt="payment icon">
                 </div>
-                <input type="radio" name="momo">
+                <input type="radio" name="momo" value="vodafone cash" ng-click="vodaCash()">
                 <div class="payment_flex">
+                    <div class="voda_cash">
+                        <p>0200946988</p>
+                    </div>
                   
                     <img src="./images/vodafone.png" alt="payment icon">
                 </div>
-                <input type="radio" name="momo">
+                <input type="radio" name="momo" value="airte tigo money"ng-click="tigoWallet()" >
                 <div class="payment_flex">
+                    <div class="tigo_wallet">
+                        <p>0265641234</p>
+                    </div>
                    
                     <img src="./images/airtel.png" alt="payment icon">
                 </div>
 
                 <div class="payment_flex">
 
-                    <input type="radio" name="momo"> <b>Bank Transfer</b>
+                    <input type="radio" name="momo" value="Bank transfer" ng-click="bankTransfer()"> <b>Bank Transfer</b>
+                    <div class="bank">
+                        <p>Prudential Bank</p>
+                        <p>Dansoman</p>
+                        <p>000911369854571</p>
+                    </div>
+                    
                     
                 </div>
             </div>
-            <p><input type="radio" name="payment"> <b>Make Payment Later</b></p>
+            <p><input type="radio" name="payment" value="payment later"> <b>Make Payment Later</b></p>
             <p style="color:red">Note: Payment Confirms your Booking. Room will not be reserved for until payment have been made. </p>
             <p></p>
             <button ng-click="complete_form()" class="next_button">Next</button>

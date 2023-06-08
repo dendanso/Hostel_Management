@@ -1,5 +1,5 @@
 
-<form action="" id="hostel_forms" ng-submit="hostel_forms()">
+<form action="" id="hostel_forms" ng-submit="hostel_forms($event)">
     <div class="name_details">
         <div class="first_name">
             <p class="firstname">First Name</p>
@@ -17,8 +17,8 @@
     <div class="other_details">
         <div class="email_1">
             <p>Gender</p>
-            <button class="button_yes" ng-click="male()">Male</button>
-            <button class="button_no" ng-click="female()">Female</button>
+            <div class="button_yes male" ng-click="male()">Male</div>
+            <div class="button_no female" ng-click="female()" >Female</div>
         </div>    
         <div class="country">
             <p class="contry">Country</p>
@@ -36,8 +36,8 @@
 
 <div class="button_holder">
     <div class="button_holder_flex">
-        <button ng-click="undergraduate()" class="undergrad">Undergraduate</button>
-        <button ng-click="postgraduate()" class="postgraduate">Post Graduate</button>
+        <div ng-click="undergraduate()" class="undergrad">Undergraduate</div>
+        <div ng-click="postgraduate()" class="postgraduate">Post Graduate</div>
     </div>
     <div class="button_holder_flex">
         <button ng-click="basic_info_two()">Next</button>
