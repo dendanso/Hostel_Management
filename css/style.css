@@ -302,14 +302,14 @@ input::-webkit-inner-spin-button {
 }
 
 
-.last_name{
+.last_name1{
     border: none;
     
     width:40%;
     
 }
 
-.last_name input{
+.last_name1 input{
     outline: none;
 }
 
@@ -338,7 +338,7 @@ input::-webkit-inner-spin-button {
     outline: none;
 }
 
-.number{
+.number_1{
   
     width:40%;
     padding: 10px;
@@ -1023,9 +1023,16 @@ b{
     left: 30%;
 }
 
+
 .momo_number p, .voda_cash p, .tigo_wallet p, .bank p{
     margin: 0;
 }
+
+.course{
+    width: 37%;
+}
+
+
 
 /*booking style ends here*/
 

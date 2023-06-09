@@ -406,6 +406,7 @@ angular_app.controller('myController',function($scope,$location){
         const phone_number = document.querySelector('.phone_number')
         const payment = document.querySelector('input[name="payment"]:checked')
         const momo = document.querySelector('input[name="momo"]:checked')
+        const replicate = document.querySelector('input[name="replicate"]:checked')
         
 
         if(firstname11==''){
@@ -432,15 +433,27 @@ angular_app.controller('myController',function($scope,$location){
         if(basic_info_one_validation){
             alert('empty fields')
         }else{
-            alert(momo.value)
-            /*heading.textContent = "Registration Complete"
+            
+            async function postBilling(){
+                const bookingUpdate = doc(db, "bookings", client_name)
+                await updateDoc(bookingUpdate, {
+                    make_payemnt:payment.value,
+                    momo:momo.value,
+                    billing_info:replicate.value
+           
+                });
+               }
+        
+               postBilling()
+
+            heading.textContent = "Registration Complete"
             sub_heading.style.display = 'none'
-            $location.path('/complete')*/
+            $location.path('/complete')
 
         }
 
        
-
+       
         
   
     }
